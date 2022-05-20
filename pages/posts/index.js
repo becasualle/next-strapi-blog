@@ -12,7 +12,7 @@ const Posts = ({ posts }) => {
 export default Posts;
 
 export async function getStaticProps() {
-  const postsRes = await axios.get(`${API_URL}/api/courses/`);
+  const postsRes = await axios.get(`${API_URL}/api/posts-plural/`);
   const posts = postsRes.data.data;
 
   return {
